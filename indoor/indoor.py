@@ -1,1 +1,2 @@
-variable = input("Type the word: ")
+text = input("Type the word: ")
+print(text.lower())
