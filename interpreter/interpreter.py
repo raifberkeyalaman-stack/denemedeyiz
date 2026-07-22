@@ -4,5 +4,6 @@ def main():
     z = int(input("z is: "))
 
 def operator(x, y, z):
-    if 
+    if y == "+":
+        return 
 
