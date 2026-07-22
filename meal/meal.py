@@ -1,5 +1,6 @@
 def main():
     time = input("The time is: ")
+    print(convert(time))
 
 
 def convert(time):
