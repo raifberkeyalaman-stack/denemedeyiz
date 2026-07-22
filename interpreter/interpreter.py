@@ -1,7 +1,10 @@
-expression = input("Expression: ")
-x = expression.split(" ")
-y = expression.split("  ")
-z = expression.split(" ")
+def main():
+    expression = input("Expression: ")
+    x, y, z = expression.split(" ")
 
+    x = int(x)
+    z = int(z)
+
+    
 
 
