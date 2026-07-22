@@ -17,7 +17,7 @@ elif file_name.endswith(".txt"):
     print("text/plain")
 
 elif file_name.endswith(".zip"):
-    print("application/x-zip-compressed")
+    print("application/zip")
 
 else:
     print("application/octet-stream")
