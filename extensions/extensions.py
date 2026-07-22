@@ -1,5 +1,5 @@
 file_name = input("Type the file name: ")
-file_name = file_name.strip()
+file_name = file_name.strip().lower()
 
 if file_name.endswith(".gif"):
     print("image/gif")
