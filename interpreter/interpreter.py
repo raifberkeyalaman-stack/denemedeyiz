@@ -1,9 +1,7 @@
-def main():
-    x = int(input("x is: "))
-    y = input("y is:", operator(y))
-    z = int(input("z is: "))
+expression = input("Expression: ")
+x = expression.split(" ")
+y = expression.split(" + ")
+z = expression.split(" ")
 
-def operator(x, y, z):
-    if y == "+":
-        return 
+
 
