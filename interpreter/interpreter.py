@@ -7,8 +7,16 @@ def main():
 
     if y == "+":
         result = x + z
+    elif y == "-":
+        result = x - z
     elif y == "*":
         result = x * z
-    elif y == "
+    elif y == "/":
+        result = x / z
+
+    print(f"{result:.1f}")
+
+main()
+
 
 
