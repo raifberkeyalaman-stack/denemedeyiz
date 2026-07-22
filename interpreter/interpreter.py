@@ -5,6 +5,7 @@ def main():
     x = int(x)
     z = int(z)
 
-    
+    if y == "+":
+        result x + y
 
 
