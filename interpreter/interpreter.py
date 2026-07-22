@@ -6,6 +6,9 @@ def main():
     z = int(z)
 
     if y == "+":
-        result x + y
+        result = x + z
+    elif y == "*":
+        result = x * z
+    elif y == "
 
 
