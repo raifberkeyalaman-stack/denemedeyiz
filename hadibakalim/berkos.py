@@ -1,7 +1,8 @@
-while True:
-    n = int(input("Kac tane?: "))
-    if n > 0:
-        break
+def main():
+    n meow(3)
 
-for i in range(n):
-    print("GÖT")
+def meow():
+    for i in range(n):
+        return "meow"
+
+main()
