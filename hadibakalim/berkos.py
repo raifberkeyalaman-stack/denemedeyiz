@@ -1,9 +1,11 @@
 def main():
-    meow(3)
+    kare_yap(4):
 
-def meow(n):
-    for i in range(n):
-        print("meow")
+def kare_yap(alan):
+    for i in range(alan):
+        for j in range(alan):
+            print("#")
+
+        print()
 
 main()
-
