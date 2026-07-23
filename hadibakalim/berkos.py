@@ -4,7 +4,7 @@ def main():
 def kare_yap(alan):
     for i in range(alan):
         for j in range(alan):
-            print("#")
+            print("#"/n)
 
         print()
 
