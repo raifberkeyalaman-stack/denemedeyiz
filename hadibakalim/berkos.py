@@ -1,8 +1,8 @@
 def main():
-    n meow(3)
+    n = int(input("how many times: ", meow(3)))
 
-def meow():
+def meow(n):
     for i in range(n):
-        return "meow"
+        print("meow")
 
 main()
