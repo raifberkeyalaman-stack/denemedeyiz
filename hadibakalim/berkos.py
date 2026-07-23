@@ -1,14 +1,7 @@
-def main():
-    x = int(input("What is x? "))
-    print("x squared is", square(x))
+while True:
+    n = int(input("Kac tane?: "))
+    if n > 0:
+        break
 
-    y = int(input("What is y? "))
-    print("y tripled is", triple(y))
-
-def square(n):
-    return n * n
-
-def triple(m):
-    return m * m * m
-
-main()
+for i in range(n):
+    print("GÖT")
