@@ -1,6 +1,7 @@
 coins = [5, 10, 25]
 price = 50
 kalan_miktar = int()
+
 def main():
     first_question = int(input("Insert a coin: "))
     coke_machine(first_question, kalan_miktar)
@@ -14,6 +15,7 @@ def coke_machine(first_question, kalan_miktar):
     else:
         print(f"Amount Duo: {price}")
     print(kalan_miktar)
+
 
 
 
