@@ -1,12 +1,11 @@
 def main():
     coins = [5, 10, 25]
-    money = int(input("Insert coin: "))
-
     coke_machine(coins)
 
 
 def coke_machine(coins):
     rest = int()
+    money = int(input("Insert coin: "))
     for coin in coins:
         if coin in coins:
             rest += 50 - coin
