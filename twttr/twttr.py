@@ -1,16 +1,14 @@
 vowels = ["a", "e", "i", "o", "u"]
 
 def main():
-    text = input("Type here: ")
-    eliminate_vowel(text)
+    word = input("Type here: ")
+    short_word(word)
 
-def eliminate_vowel(text):
+def short_word(word):
     result =""
-    for vowel in vowels:
-        if vowel in text:
-            result += vowel
-        else:
-            print("nothing")
+    for letter in word:
+        if letter.lower() not in vowels:
+           result += letter
     print(result)
 
 main()
