@@ -11,7 +11,7 @@ def eliminate_vowel(text):
             result += ""
         else:
             print("nothing")
-        print(result)
+    print(result)
 
 
 main()
