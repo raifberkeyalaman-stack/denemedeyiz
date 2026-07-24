@@ -1,23 +1,21 @@
 coins = [5, 10, 25]
-#price = 50
-kalan_miktar = 0
+
 
 def main():
-    first_question = int(input("Insert a coin: "))
-    coke_machine(first_question, kalan_miktar)
+    coke_machine()
 
+def coke_machine():
+    amount_due = 50
+    while amount_due > 0:
+        print("Amount Due:", amount_due)
+        coin = int(input("Insert coin: "))
 
-def coke_machine(first_question, kalan_miktar):
-    price = 50
-    while price > 0:
-        if first_question in coins:
-            price -= first_question
-            print("Amount Duo:", price)
+        if coin in coins:
+            amount_due -= coin
         else:
-            print(f"Amount Duo: {price}")
-            break
-        continue
-    print(kalan_miktar)
+            print("Amount Due:", amount_due)
+
+
+
 
 main()
-
