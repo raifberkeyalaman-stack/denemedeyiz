@@ -8,7 +8,7 @@ def eliminate_vowel(text):
     result =""
     for vowel in text:
         if vowel in text:
-            result += ""
+            result += "fffff"
         else:
             print("nothing")
     print(result)
