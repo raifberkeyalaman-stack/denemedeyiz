@@ -3,7 +3,8 @@ def main():
     coke_machine(coins)
 
 def coke_machine():
-    
+    while True:
+        
 
 
 main()
