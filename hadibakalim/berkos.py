@@ -1,11 +1,13 @@
 def main():
-    kare_yap(4)
+    liste = []
 
-def kare_yap(alan):
-    for i in range(alan):
-        for j in range(alan):
-            print("#", end="")
-
-        print()
+    while True:
+        ekle = input("Yaz bakalim: ")
+        if ekle == "undo":
+            geri_aldim = liste.pop()
+            print(f"neyi geri aldim: {geri_aldim}")
+        else:
+            liste.append(ekle)
+        print(liste)
 
 main()
