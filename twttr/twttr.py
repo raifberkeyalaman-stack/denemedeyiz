@@ -4,13 +4,12 @@ def main():
     text = input("Type here: ")
     eliminate_vowel(text)
 
-def eliminate_vowel(text):
+def eliminate_vowel(text, vowel):
     result =""
-    for vowel in text:
-        if vowel in text:
-            result += "fffff"
-        else:
-            print("nothing")
+    if vowel in text:
+        result += vowel
+    else:
+        print("nothing")
     print(result)
 
 
