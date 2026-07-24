@@ -1,6 +1,7 @@
 def main():
     coins = [5, 10, 25]
     money = int(input("Insert coin: "))
+
     coke_machine(coins)
 
 
