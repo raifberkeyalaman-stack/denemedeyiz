@@ -3,11 +3,13 @@ def main():
     convert_snakecase(camel_case)
 
 def convert_snakecase(camel_case):
+        snake_case =""
         for letter in camel_case:
               if letter.isupper():
-                    camel_case += "_" + letter.lower()
+                    snake_case += "_" + letter.lower()
               else:
-                  camel_case += letter
-        print(camel_case)
+                  snake_case += letter
+        print(snake_case)
 
 main()
+
