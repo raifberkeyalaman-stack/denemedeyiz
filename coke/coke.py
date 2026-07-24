@@ -11,11 +11,10 @@ def coke_machine():
 
         if coin in coins:
             amount_due -= coin
-            print("Change Owed: 0")
-            if amount_due < coin:
-                print("Change Owed:", coin)
+
         else:
             print("Amount Due:", amount_due)
+        print("Change Owed:", abs(amount_due))
 
 
 main()
