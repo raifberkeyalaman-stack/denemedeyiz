@@ -17,8 +17,5 @@ def coke_machine(first_question, kalan_miktar):
     print(kalan_miktar)
 
 
-
-
-
 main()
 
