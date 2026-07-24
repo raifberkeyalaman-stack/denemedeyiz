@@ -9,11 +9,11 @@ def main():
 
 
 def coke_machine(first_question, kalan_miktar):
-
-    if first_question in coins:
-        kalan_miktar += price - first_question
-    else:
-        print(f"Amount Duo: {price}")
+    while kalan_miktar > 0:
+        if first_question in coins:
+            kalan_miktar += price - first_question
+        else:
+            print(f"Amount Duo: {price}")
     print(kalan_miktar)
 
 
