@@ -7,9 +7,8 @@ def main():
 
 
 def is_valid(plate):
-    letters = list(plate)
-    print(letters)
     
+
 
 
 main()
