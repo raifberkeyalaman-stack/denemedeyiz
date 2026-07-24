@@ -6,8 +6,9 @@ def main():
         print("Invalid")
 
 
-def is_valid(s):
-    
+def is_valid(plate):
+    for i in range(len(plate)):
+        print(plate)
 
 
 main()
