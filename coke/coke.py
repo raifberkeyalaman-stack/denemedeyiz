@@ -7,16 +7,15 @@ def main():
     coke_machine(first_question, kalan_miktar)
 
 
-
 def coke_machine(first_question, kalan_miktar):
     while kalan_miktar > 0:
         if first_question in coins:
-            kalan_miktar += price - first_question
+            price -= kalan_miktar
+            print("Amount Duo:", price)
         else:
             print(f"Amount Duo: {price}")
         continue
     print(kalan_miktar)
-
 
 main()
 
