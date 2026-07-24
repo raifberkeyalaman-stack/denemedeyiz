@@ -7,8 +7,8 @@ def main():
 
 
 def is_valid(plate):
-    for i in range(len(plate)):
-        print(plate)
+    letters = list(plate)
+    print(letters)
 
 
 main()
