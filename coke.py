@@ -6,7 +6,8 @@ def coke_machine(coins):
     while True:
         user_input = input("Amount Due: 50")
         for coin in coins:
-            if coin 
+            if coin in coins:
+                print(f")
 
 
 
