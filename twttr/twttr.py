@@ -5,8 +5,10 @@ def main():
     eliminate_vowel(text)
 
 def eliminate_vowel():
-    if vowel in text:
-        
+    for vowel in text:
+        if vowel in text:
+            print(")
+
 
 
 
