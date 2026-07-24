@@ -1,6 +1,5 @@
 coins = [5, 10, 25]
 
-
 def main():
     coke_machine()
 
@@ -14,8 +13,6 @@ def coke_machine():
             amount_due -= coin
         else:
             print("Amount Due:", amount_due)
-
-
 
 
 main()
