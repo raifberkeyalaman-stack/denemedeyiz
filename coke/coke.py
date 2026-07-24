@@ -1,5 +1,5 @@
 coins = [5, 10, 25]
-price = 50
+#price = 50
 kalan_miktar = 0
 
 def main():
@@ -8,6 +8,7 @@ def main():
 
 
 def coke_machine(first_question, kalan_miktar):
+    price = 50
     while price > 0:
         if first_question in coins:
             price -= kalan_miktar
