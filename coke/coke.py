@@ -14,6 +14,7 @@ def coke_machine(first_question, kalan_miktar):
             kalan_miktar += price - first_question
         else:
             print(f"Amount Duo: {price}")
+        continue
     print(kalan_miktar)
 
 
