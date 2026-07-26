@@ -34,8 +34,10 @@ def is_valid(plate):
         print("Valid")
     elif len(plate) <= 6 and plate[0:2].isalpha() and plate[3:5].isdecimal() and plate[3] != "0":
             print("Valid")
-    elif len(plate) <= 6 and plate[0:3].isalpha() and plate[3:5].isdecimal() and plate[3] != "0":
+    elif len(plate) <= 6 and plate[0:3].isalpha() and plate[4:5].isdecimal() and plate[4] != "0":
             print("Valid")
+    elif len(plate) <= 6 and plate[0:4].isalpha() and plate[5].isdecimal() and plate[5] != "0":
+                print("Valid")
     else:
         print("Invalid")
 
