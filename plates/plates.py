@@ -19,8 +19,12 @@ def is_valid(plate):
             if not number_started:
                 if char == "0":
                     return False
-
-        number_started = True
+            elif number_started and char.isalpha():
+                return False
+    if not char.isalnum():
+        return False
+    else:
+        return True
 
 
 
