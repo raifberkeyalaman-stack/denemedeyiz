@@ -12,7 +12,7 @@ def is_valid(plate):
     if not plate[:2].isalpha():
         return False
     number_started = False
-    for char in range(len(plate)):
+    for char in plate:
         print(char)
 
 
