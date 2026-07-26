@@ -1,7 +1,9 @@
 foods = {"apple": 130,
          "avocado": 50,
          "banana": 110,
-         "sweet cheery": 100}
+         "sweet Cheeries": 100,
+         "Kiwifruit": 90,
+         "pear": 100}
 
 def main():
     food = input("Item: ").lower()
