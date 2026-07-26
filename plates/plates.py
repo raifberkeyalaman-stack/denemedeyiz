@@ -15,8 +15,9 @@ def is_valid(plate):
     for char in plate:
         if char.isdigit():
             number_started = True
-        if char in plate:
+        if char.isdigit():
             
+
 
 
 main()
