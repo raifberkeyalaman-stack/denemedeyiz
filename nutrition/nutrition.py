@@ -8,5 +8,5 @@ def main():
 def find_nutrition(food):
 
     if food in foods.keys():
-        print("key", "value")
+        print(key, value)
 
