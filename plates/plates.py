@@ -13,7 +13,7 @@ def is_valid(plate):
         return False
     number_started = False
     for char in range(len(plate)):
-        
+        print(char)
 
 
 main()
