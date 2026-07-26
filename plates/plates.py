@@ -32,6 +32,7 @@ def is_valid(plate):
 
         # Rule 5: Once numbers start, no letters are allowed
         elif number_started:
+            print("no letters allowed after a number")
             return False
 
     return True
