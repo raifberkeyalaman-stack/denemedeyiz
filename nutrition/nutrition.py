@@ -1,4 +1,4 @@
-foods ={"apple": 130 }
+foods ={"apple": 130}
 
 def main():
     food = input("Item: ")
@@ -9,4 +9,6 @@ def find_nutrition(foods):
 
     if food in foods:
         print(key, value)
+    else:
+        print("nothing")
 
