@@ -3,7 +3,7 @@ def main():
     if is_valid(plate):
         print("Valid")
     else:
-        print("Invalid")
+        print("Invalidhhh")
 
 
 def is_valid(plate):
