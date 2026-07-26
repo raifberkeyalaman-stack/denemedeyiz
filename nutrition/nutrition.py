@@ -3,10 +3,11 @@ foods = {"apple": 130,
          "banana": 110,
          "sweet Cheeries": 100,
          "Kiwifruit": 90,
-         "pear": 100}
+         "pear": 100
+}
 
 def main():
-    food = input("Item: ").lower()
+    food = input("Item: ").lower().strip()
     find_nutrition(food, foods)
 
 
