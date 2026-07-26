@@ -5,8 +5,8 @@ def main():
     find_nutrition(foods)
 
 
-def find_nutrition(food):
+def find_nutrition(foods):
     item = input("Item: ")
-    if food in foods:
+    if item in foods:
         print("key", "value")
 
