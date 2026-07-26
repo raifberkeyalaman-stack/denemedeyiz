@@ -25,6 +25,4 @@ def is_valid(plate):
     else:
         return True
 
-
-
 main()
