@@ -16,7 +16,11 @@ def is_valid(plate):
         if char.isdigit():
             number_started = True
         if char.isdigit():
-            
+            if not number_started:
+                if char == "0":
+                    return False
+
+        number_started = True
 
 
 
