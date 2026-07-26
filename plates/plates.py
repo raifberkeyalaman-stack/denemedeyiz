@@ -16,7 +16,7 @@ def is_valid(plate):
     if not plate[:2].isalpha():
         return False
 
-    number_started = False
+    number_started = True
 
     for char in plate:
         # Rule 3: No punctuation or spaces
@@ -32,7 +32,7 @@ def is_valid(plate):
 
         # Rule 5: Once numbers start, no letters are allowed
         elif number_started:
-            print("no letters allowed after a number")
+            
             return False
 
     return True
