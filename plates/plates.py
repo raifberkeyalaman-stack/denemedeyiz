@@ -12,7 +12,7 @@ def is_valid(plate):
         return True
     elif len(plate) <= 3 and plate[0:2].isalpha():
         return True
-    elif len(plate) <= 3 and plate[0:1].isalpha() and plate[2].isalpha() or plate[2].isdecimal() and plate[2] != "0":
+    elif len(plate) <= 3 and plate[0:1].isalpha() and plate[2].isalpha() or (plate[2].isdecimal() and plate[2] != "0"):
         return True
     elif len(plate) <= 4 and plate[0:3].isalpha():
             return True
