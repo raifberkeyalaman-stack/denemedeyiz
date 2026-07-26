@@ -1,7 +1,7 @@
 foods ={"apple": 130}
 
 def main():
-    food = input("Item: ")
+    food = input("Item: ").lower()
     find_nutrition(food, foods)
 
 
@@ -11,4 +11,6 @@ def find_nutrition(food, foods):
         print(food, foods[food])
     else:
         print("nothing")
+main()
+
 
