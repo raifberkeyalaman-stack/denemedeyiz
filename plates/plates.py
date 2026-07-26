@@ -13,7 +13,9 @@ def is_valid(plate):
         return False
     number_started = False
     for char in plate:
-        print(char)
+        if char.isdigit():
+            number_started = True
+            
 
 
 main()
