@@ -14,13 +14,12 @@ def is_valid(plate):
     number_started = False
     for char in plate:
         if char.isdigit():
-            number_started = True
-        if char.isdigit():
             if not number_started:
                 if char == "0":
                     return False
-            elif number_started and char.isalpha():
-                return False
+                number_started = True
+    elif number_started and char.isalpha():
+        return False
     if not char.isalnum():
         return False
     else:
