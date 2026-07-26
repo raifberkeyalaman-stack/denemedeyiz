@@ -1,8 +1,8 @@
 foods = {"apple": 130,
          "avocado": 50,
          "banana": 110,
-         "Sweet Cheerries": 100,
-         "Kiwifruit": 90,
+         "sweet cherries": 100,
+         "kiwifruit": 90,
          "pear": 100
 }
 
