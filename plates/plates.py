@@ -14,15 +14,15 @@ def is_valid(plate):
         print("Valid")
     elif len(plate) <= 4 and plate[0:2].isalpha() and plate[3].isalpha() or plate[3].isdecimal() and plate[3] != "0":
             print("Valid")
-    elif len(plate) <= 4 and plate[0:1].isalpha() and plate[2:3].isdecimal():
+    elif len(plate) <= 4 and plate[0:1].isalpha() and plate[2:3].isdecimal() and plate[2] != "0":
                 print("Valid")
-    elif len(plate) <= 5 and plate[0:1].isalpha() and plate[2:4].isdecimal():
+    elif len(plate) <= 5 and plate[0:1].isalpha() and plate[2:4].isdecimal() and plate[2] != "0":
                     print("Valid")
-    elif len(plate) <= 5 and plate[0:2].isalpha() and plate[3:4].isdecimal():
+    elif len(plate) <= 5 and plate[0:2].isalpha() and plate[3:4].isdecimal() and plate[3] != "0":
                     print("Valid")
-    elif len(plate) <= 5 and plate[0:3].isalpha() and plate[4].isdecimal():
+    elif len(plate) <= 5 and plate[0:3].isalpha() and plate[4].isdecimal() and plate[4] != "0":
                         print("Valid")
-    elif len(plate) <= 6 and plate[0:1].isalpha() and plate[2:5].isdecimal():
+    elif len(plate) <= 6 and plate[0:1].isalpha() and plate[2:5].isdecimal() :
         print("Valid")
     else:
         print("Invalid")
