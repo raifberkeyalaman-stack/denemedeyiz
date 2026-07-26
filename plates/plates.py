@@ -7,7 +7,7 @@ def main():
 
 
 def is_valid(plate):
-    if 4 >= len(plate) >= 2 and plate[0].isalpha() and plate[1].isalpha():
+    if len(plate) >= 2 and plate[0].isalpha() and plate[1].isalpha():
         print("Valid")
     elif len(plate) >= 2 and plate[0].isalpha() and plate[1].isalpha() and plate[2:5].isdecimal():
         print("Valid")
