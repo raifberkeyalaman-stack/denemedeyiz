@@ -16,7 +16,7 @@ def is_valid(plate):
     if not plate[:2].isalpha():
         return False
 
-    number_started = True
+    number_started = False
 
     for char in plate:
         # Rule 3: No punctuation or spaces
