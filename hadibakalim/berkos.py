@@ -1,13 +1,15 @@
-def main():
-    liste = []
+vowels = ["a", "e", "i", "o", "u"]
 
-    while True:
-        ekle = input("Yaz bakalim: ")
-        if ekle == "undo":
-            geri_aldim = liste.pop()
-            print(f"neyi geri aldim: {geri_aldim}")
-        else:
-            liste.append(ekle)
-        print(liste)
+def main():
+    word = input("Input: ")
+    short_words(word)
+
+def short_words(word):
+    result =""
+    for letter in word:
+        if letter.lower() not in vowels:
+            result += letter
+    print(result)
+
 
 main()
