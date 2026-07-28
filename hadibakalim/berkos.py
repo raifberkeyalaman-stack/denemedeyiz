@@ -1,6 +1,8 @@
-try:
-    number = int(input("Which number?: "))
-    print(f"The number is {number}")
-except ValueError:
-    print("Enter a number not string")
-
+while True:
+    try:
+        number = int(input("Which number?: "))
+    except ValueError:
+        print("Enter a number not string")
+    else:
+        print(f"The number is {number}")
+        break
