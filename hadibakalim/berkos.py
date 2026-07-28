@@ -1,8 +1,11 @@
-while True:
-    try:
-        number = int(input("Which number?: "))
-    except ValueError:
-        print("Enter a number not string")
-    else:
-        print(f"The number is {number}")
-        break
+def main():
+    height = int(input("Enter a height"))
+    pyramid(height)
+
+def pyramid(n):
+    for i in range(n):
+        print("#" * i)
+
+
+
+main()
