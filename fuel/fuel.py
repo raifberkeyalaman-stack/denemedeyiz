@@ -4,7 +4,9 @@ result = x / y
 
 while True:
     try:
-        fraction = int(input("Fraction: {x} / {y}"))
+        fraction = int(input("Fraction: "))
         print((round(result) * 100) +"%")
+        break
     except ValueError:
+        print("fraction must be a number")
 
