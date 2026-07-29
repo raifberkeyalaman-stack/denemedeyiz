@@ -1,5 +1,5 @@
-x = int(x)
-y = int(y)
+x = int(input("x is: "))
+y = int(input("y is: "))
 result = x / y
 
 while True:
@@ -7,5 +7,4 @@ while True:
         fraction = int(input("Fraction: {x} / {y}"))
         print((round(result) * 100) +"%")
     except ValueError:
-
 
