@@ -1,2 +1,2 @@
 while True:
-    x = int(input("))
+    fraction = int(input("Fraction: (int(x)/int(y))"))
