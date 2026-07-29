@@ -11,7 +11,6 @@ while True:
     except ZeroDivisionError:
         print("y can not be zero")
     if x < 0 or y < 0 or x > y:
-        break
-    print("x can not be negative")
+        print("x can not be negative")
 
 
