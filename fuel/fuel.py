@@ -9,6 +9,9 @@ while True:
         break
     except ValueError:
         print("fraction can not be string")
+    if x < 0:
+        except ValueError:
+            print("x can not be negative")
     except ZeroDivisionError:
         print("y can not be zero")
 
