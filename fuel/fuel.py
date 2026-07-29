@@ -3,7 +3,7 @@
 
 while True:
     try:
-        fraction = int(input("Fraction: "))
+        fraction = int(input("Fraction: " int(x)))
         print((round() * 100) +"%")
         break
     except ValueError:
