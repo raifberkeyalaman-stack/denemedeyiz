@@ -1,4 +1,4 @@
-x = 
+result = x / y
 
 
 while True:
