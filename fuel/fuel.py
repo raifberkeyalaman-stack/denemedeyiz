@@ -5,7 +5,7 @@ while True:
         x = int(x)
         y = int(y)
         result = round(x / y)
-        print((result * 100) +"%")
+        print(str(result * 100))
         break
     except ValueError:
         print("fraction must be a number")
