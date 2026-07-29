@@ -7,7 +7,7 @@ def main():
             x = int(x)
             y = int(y)
 
-            if y == 0:
+            if x < 0 or y < 0:
                 continue
 
             if x > y:
