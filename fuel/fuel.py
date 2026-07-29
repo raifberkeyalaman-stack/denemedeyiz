@@ -4,8 +4,8 @@ while True:
         x, y = fraction.split("/")
         x = int(x)
         y = int(y)
-        result = round(x / y)
-        print(str(result * 100) + "%")
+        percantage = round(x / y * 100)
+        print(str(percantage) + "%")
         break
     except ValueError:
         print("fraction must be a number")
