@@ -9,7 +9,7 @@ while True:
         break
     except ValueError:
         print("fraction can not be string")
-        if x < 0:
+        if percantage < 0:
             print("percantage can not be negative")
     #except ValueError:
         #if percantage < 0:
