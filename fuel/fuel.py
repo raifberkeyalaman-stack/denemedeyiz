@@ -1,8 +1,10 @@
-result = round(x / y)
-
 while True:
     try:
-        fraction = int(input(f"Fraction: ({int(x)} / {int(y)})"))
+        fraction = input("Fraction: ")
+        x, y = fraction.split("/")
+        x = int(x)
+        y = int(y)
+        result = round(x / y)
         print((result * 100) +"%")
         break
     except ValueError:
