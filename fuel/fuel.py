@@ -8,7 +8,9 @@ while True:
         print(str(percantage) + "%")
         break
     except ValueError:
-        print("fraction must be a number")
+        print("fraction can not be string")
+        if x < 0:
+            print("x must be positive")
     except ZeroDivisionError:
         print("y can not be zero")
 
