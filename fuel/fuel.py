@@ -6,12 +6,12 @@ while True:
         y = int(y)
         percantage = round(x / y * 100)
         print(str(percantage) + "%")
-        break
     except ValueError:
         print("fraction can not be string")
-    if x < 0 or y < 0:
-        
-            print("x can not be negative")
     except ZeroDivisionError:
         print("y can not be zero")
+    if x > 0 or y > 0 or x < y:
+        break
+    print("x can not be negative")
+
 
