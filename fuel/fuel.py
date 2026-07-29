@@ -1,5 +1,3 @@
-x = int(input("x is: "))
-y = int(input("y is: "))
 result = round(x / y)
 
 while True:
