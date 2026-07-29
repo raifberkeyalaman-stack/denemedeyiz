@@ -1,9 +1,9 @@
-
+x = 
 
 
 while True:
     try:
-        fraction = int(input("Fraction: " int(x)))
+        fraction = int(input(f"Fraction: ({int(x)} / {int(y)})"))
         print((round() * 100) +"%")
         break
     except ValueError:
