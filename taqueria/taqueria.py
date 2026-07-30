@@ -17,8 +17,7 @@ while True:
         if food in menu:
             total += menu[food]
             print(f"Total: ${total:.2f}")
-        else:
-            print("Item is not in the menu")
+        
       except EOFError:
           print("stop")
           break
