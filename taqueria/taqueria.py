@@ -15,7 +15,8 @@ while True:
       try:
         food = input("Food: ")
         if food.title() in menu:
-            print(f"${menu[food]}")
+            total += menu[food]
+            print(f"Total: ${total:.2f}")
         else:
             print("Item is not in the menu")
       except EOFError:
