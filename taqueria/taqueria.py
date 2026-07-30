@@ -14,7 +14,7 @@ while True:
       try:
         food = input("Food: ")
         if food in menu:
-            print(f"{menu[food]}")
+            print(f"${menu[food]}")
       except EOFError:
         print("Item is not in the menu")
 
