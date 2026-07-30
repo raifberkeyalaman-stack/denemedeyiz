@@ -13,8 +13,8 @@ menu = {
 while True:
       total = 0
       try:
-        food = input("Food: ")
-        if food.title() in menu:
+        food = input("Food: ").title()
+        if food in menu:
             total += menu[food]
             print(f"Total: ${total:.2f}")
         else:
