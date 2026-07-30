@@ -13,7 +13,7 @@ menu = {
 while True:
       try:
         food = input("Food: ")
-        if food.lower() in menu:
+        if food.title() in menu:
             print(f"${menu[food]}")
         else:
             print("Item is not in the menu")
