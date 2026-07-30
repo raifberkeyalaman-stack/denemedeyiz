@@ -11,6 +11,12 @@ menu = {
 }
 
 while True:
-    try:
+      try:
         food = input("Food: ")
-        
+        if food in menu:
+            print(menu[food])
+        except EOFError:
+            print("Item is not in the menu")
+
+
+
