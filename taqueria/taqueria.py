@@ -15,8 +15,8 @@ while True:
         food = input("Food: ")
         if food in menu:
             print(menu[food])
-        except EOFError:
-            print("Item is not in the menu")
+      except EOFError:
+        print("Item is not in the menu")
 
 
 
