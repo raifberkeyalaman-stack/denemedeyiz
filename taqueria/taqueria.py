@@ -13,12 +13,12 @@ total = 0
 
 while True:
       try:
-        food = input("Food: ").title().strip()
+        food = input("Item: ").title().strip()
         if food in menu:
             total += menu[food]
             print(f"Total: ${total:.2f}")
         else:
-            print("Item is not in the menu", "\n")
+            print("Item is not in the menu")
       except EOFError:
           print("stop")
           break
