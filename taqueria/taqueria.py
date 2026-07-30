@@ -9,9 +9,9 @@ menu = {
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
+total = 0
 
 while True:
-      total = 0
       try:
         food = input("Food: ").title()
         if food in menu:
