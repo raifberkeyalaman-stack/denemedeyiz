@@ -1,7 +1,7 @@
 def main():
     number = int(input("Bu sayinin karesi: "))
 
-def kare(number):
+def square(number):
     karesi = number * number
     print(f"Bu sayinin karesi: {karesi}")
 
