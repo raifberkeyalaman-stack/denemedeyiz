@@ -1,7 +1,7 @@
 import sys
 
-from kare import square
+from kare import kup
 
 if len(sys.argv) == 2:
-    square(sys.argv[1])
+    kup(sys.argv[1])
 
