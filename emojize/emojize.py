@@ -1,8 +1,13 @@
 import emoji
 
-#print(emoji.emojize('Input: :thumbs_up:'))
-#yaz = emoji.emojize()
-o = emoji.emojize("")
-value = input(f"Input: {o}")
+def main():
+
+    text = input("Input: ")
+
+    convert_text
+
+o = emoji.emojize(":thumbs_up:")
 print(o)
-print(value)
+
+
+main()
