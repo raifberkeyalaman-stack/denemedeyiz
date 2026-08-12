@@ -1,2 +1,6 @@
-text = input("Type it here: ")
-print(text.replace(" ", "..."))
+def main():
+    text = input("Input: ")
+    text = text.replace(" ", "...")
+    print(text)
+
+main()
