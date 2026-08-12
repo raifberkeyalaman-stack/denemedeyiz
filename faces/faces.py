@@ -1,5 +1,6 @@
 def main():
-    text = str(input("Input: ").replace(" :)", smiley_face()))
+    text = input("Input: ")
+    text = text.replace(" :)", smiley_face())
     print(text)
 
 def smiley_face(text):
