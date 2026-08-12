@@ -1,6 +1,5 @@
 def main():
-    text = input("Input: ")
-    text = text.replace(" ", "...")
+    text = input("Input: ").replace(" ", "...")
     print(text)
 
 main()
