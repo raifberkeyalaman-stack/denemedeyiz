@@ -1,8 +1,8 @@
 def main():
     text = input("Input: ")
-    smiley_face(text)
+    smiley_face()
 
-def smiley_face(text):
+def smiley_face():
     text.replace(" :)", " 🙂")
     return text
 
