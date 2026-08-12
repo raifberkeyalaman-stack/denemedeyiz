@@ -1,12 +1,11 @@
 def main():
-    text = input("Input: ").replace(" :)", smiley_face())
+    text = str(input("Input: ").replace(" :)", smiley_face()))
     print(text)
 
-
 def smiley_face(text):
-    return 🙂
+    return str("🙂")
 
 def sad_face(text):
-    return 🙁
+    return str("🙁")
 
 main()
