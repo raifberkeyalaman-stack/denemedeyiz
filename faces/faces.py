@@ -4,6 +4,6 @@ def main():
 
 def smiley_face(text):
     text.replace(" :)", " 🙂")
-    print(text)
+    return text
 
 main()
