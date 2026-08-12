@@ -3,10 +3,10 @@ def main():
     text = text.replace(" :)", smiley_face())
     print(text)
 
-def smiley_face(text):
+def smiley_face():
     return str("🙂")
 
-def sad_face(text):
+def sad_face():
     return str("🙁")
 
 main()
