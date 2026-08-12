@@ -1,9 +1,9 @@
 def main():
-    m = int(input("How many kilo?: "))
-    c = 300000000
-    print("The energy is", formula(m, c))
+    mass = int(input("m: "))
+    c = int(300000000)
+    print(f"E: {eq}")
 
-def formula(m, c):
-    return  m * c * c
+def eq(m, c):
+    return m * c * c
 
 main()
