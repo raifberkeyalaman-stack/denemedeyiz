@@ -1,5 +1,5 @@
 def main():
-    ...
+    text
 
 
 def convert(time):
