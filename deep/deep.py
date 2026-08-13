@@ -1,5 +1,5 @@
 def main():
-    text = input("What is the answer to the Great Question of Life, the Universe and Everything? ").title()
+    text = input("What is the answer to the Great Question of Life, the Universe and Everything? ")
 
     if text == "forty two" or text == "42":
         print("yes")
