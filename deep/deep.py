@@ -1,5 +1,10 @@
 def main():
-    text = input()
+    text = input("What is the answer to the Great Question of Life, the Universe and Everything? ")
+
+    if text == "fourty two" or text == "42":
+        print("yes")
+    else:
+        print("no")
 
 main()
 
