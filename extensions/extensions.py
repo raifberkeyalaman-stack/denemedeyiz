@@ -13,5 +13,7 @@ def main():
         print("text/plain")
     elif file.endswith(".zip"):
         print("application/zip")
+    else:
+        print("application/octet-stream")
 
 main()
