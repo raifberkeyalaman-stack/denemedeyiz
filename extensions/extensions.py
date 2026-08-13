@@ -1,5 +1,5 @@
 def main():
-    file = input("File name: ").strip.lower()
+    file = input("File name: ").strip()
 
     if file.endswith(".gif"):
         print("image/gif")
@@ -13,7 +13,5 @@ def main():
         print("text/plain")
     elif file.endswith(".zip"):
         print("application/zip")
-
-
 
 main()
