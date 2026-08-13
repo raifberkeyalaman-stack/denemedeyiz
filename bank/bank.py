@@ -1,4 +1,11 @@
 def main ():
-    text = input("Greeting: ")
+    text = input("Greeting: ").strip().lower()
 
-    if text ==
+    if text == "hello":
+        print("$0")
+    elif text.startswith("h") and text != "hello":
+        print("$20")
+    else:
+        print("$100")
+
+main()
