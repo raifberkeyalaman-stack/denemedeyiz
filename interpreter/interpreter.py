@@ -5,14 +5,14 @@ def main():
     x = int(x)
     z = int(z)
 
-    if y == " + ":
-        result = x + Z
-    elif y == " - ":
-            result = x - Z
-    elif y == " / ":
-            result = x / Z
-    elif y == " * ":
-            result = x * Z
+    if y == "+":
+        result = x + z
+    elif y == "-":
+            result = x - z
+    elif y == "/":
+            result = x / z
+    elif y == "*":
+            result = x * z
 
     print(f"{result:.1f}")
 
