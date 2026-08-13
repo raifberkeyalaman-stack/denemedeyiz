@@ -4,6 +4,9 @@ def main():
 
 
 def convert(time):
+
+    if 7 <= time <= 8:
+        print("breakfast time")
     minutes
 
     hours, minutes = time.split(":")
