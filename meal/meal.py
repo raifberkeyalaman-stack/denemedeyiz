@@ -1,11 +1,12 @@
 def main():
-    time = int(input("Meal time: "))
-
-    hours
+    time = input("Meal time: ")
     convert(time)
 
 
 def convert(time):
+    hours, minutes = time.split(":")
+
+
 
     if 7 <= time <= 8:
         print("breakfast time")
@@ -14,11 +15,6 @@ def convert(time):
     elif 18 <= time <= 19:
             print("dinner time")
 
-
-
-    minutes
-
-    hours, minutes = time.split(":")
 
 
 if __name__ == "__main__":
