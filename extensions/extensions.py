@@ -1,5 +1,5 @@
 def main():
-    file = input("File name: ").strip()
+    file = input("File name: ").strip().lower()
 
     if file.endswith(".gif"):
         print("image/gif")
