@@ -7,7 +7,8 @@ def main():
         insert_coin = int(input("Insert Coin: "))
         if insert_coin in coins:
             amount_due = amount_due - insert_coin
+            print(amount_due)
         else:
-            amount_due = amount_due
+            print
 
 main()
