@@ -1,6 +1,8 @@
 def main():
     for i in range(4):
-        print(i, i+1)
+        print(i)
+        for j in range(4):
+            print("#")
 
 
 main()
