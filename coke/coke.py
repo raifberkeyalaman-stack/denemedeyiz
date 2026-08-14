@@ -1,7 +1,6 @@
 coins = [5, 10, 25]
 
 def main():
-    print("Amount Due: 50")
     amount_due = 50
     while amount_due > 0:
         print("Amount Due:", amount_due)
