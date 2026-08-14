@@ -11,5 +11,4 @@ def main():
             amóunt_due = amount_due
 
 
-
 main()
