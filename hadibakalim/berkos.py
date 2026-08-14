@@ -1,9 +1,11 @@
 def main():
+    rows = 5
+    num = 1
 
-    for i in range(3):
-        #print(i)
-        for j in range(4):
-            print("#", i + 1)
-
+    for i in range(1, rows + 1):
+        for j in range(i):
+        print(num, end=" ")
+        num += 1
+        print()
 
 main()
