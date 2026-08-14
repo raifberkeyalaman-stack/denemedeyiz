@@ -8,6 +8,8 @@ def main():
         if insert_coin in coins:
             amount_due = amount_due - insert_coin
             print(amount_due)
+        elif amount_due <0:
+            break
         else:
             print(amount_due)
 
