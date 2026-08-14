@@ -1,8 +1,6 @@
 def main():
-    i = 0
-    while i < 5:
-        print("Cersos")
-        i = i + 1
+    for i in range(4):
+        print(i, i+1)
 
 
 main()
