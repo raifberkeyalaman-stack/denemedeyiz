@@ -1,12 +1,8 @@
 def main():
-    height = int(input("Enter a height"))
-    pyramid(height)
-
-def pyramid(n):
-    for i in range(n):
-        print("#" * (i+1))
-
-if __name__ == "__main__":
+    i = 0
+    while i < 5:
+        print("Cersos")
+        i = i + 1
 
 
-    main()
+main()
