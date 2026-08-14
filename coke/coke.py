@@ -2,7 +2,7 @@ coins = [5, 10, 25]
 
 def main():
     print("Amount Due: 50")
-    while True:
+    while amount_due > 0:
         amount_due = 0
         insert_coin = int(input("Insert Coin: "))
         if coin in coins:
