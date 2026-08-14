@@ -9,6 +9,6 @@ def main():
             amount_due = amount_due - insert_coin
             print(amount_due)
         else:
-            print
+            print(amount_due)
 
 main()
