@@ -5,7 +5,7 @@ def main():
 def convert(text):
     snake_case = ""
     for letter in text:
-        print()
+        print(snake_case)
 
 
 main()
