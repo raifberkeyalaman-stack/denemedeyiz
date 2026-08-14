@@ -1,13 +1,13 @@
 vowels = ["a", "e", "i", "o", "u"]
 
 def main():
-    text = input("Input: ")
-    kelime=""
+    text = input("Input: ").lower().strip()
+
     for letter in text:
         if letter not in vowels:
             kelime += letter
         else:
             kelime = text.replace(letter, "")
-        print(kelime, end=" ")
+    print(kelime, end=" ")
 
 main()
