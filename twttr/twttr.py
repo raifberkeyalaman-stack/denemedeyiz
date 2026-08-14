@@ -6,8 +6,6 @@ def main():
     for letter in text:
         if letter not in vowels:
             kelime += letter
-        else:
-            kelime = text.replace(letter, "")
     print(kelime, end=" ")
 
 main()
