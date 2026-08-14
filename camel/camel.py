@@ -1,9 +1,11 @@
 def main():
-    text = input("camelCase: ")
-    snake_case(text)
+    text = input("camelCase: ").lower()
+    convert(text)
 
-def snake_case(text):
+def convert(text):
+    snake_case = ""
     for letter in text:
-        
+        print()
+
 
 main()
