@@ -3,7 +3,7 @@ vowels = ["a", "e", "i", "o", "u"]
 def main():
     text = input("Input: ")
     kelime = ""
-    for vowel in vowels:
+    for vowel in text:
         if vowel not in text:
             kelime += text
         else:
