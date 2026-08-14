@@ -1,5 +1,5 @@
 def main():
-    text = input("camelCase: ")
+    text = input("camelCase: ").strip()
     convert(text)
 
 def convert(text):
