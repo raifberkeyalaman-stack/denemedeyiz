@@ -8,6 +8,6 @@ def main():
         if insert_coin in coins:
             amount_due = amount_due - insert_coin
         else:
-            amóunt_due = amount_due
+            amount_due = amount_due
 
 main()
