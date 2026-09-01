@@ -2,6 +2,11 @@ import random
 
 
 def main():
+    
+
+
+
+def get_level(level):
     while True:
         try:
             level = int(input("Level: "))
@@ -10,13 +15,8 @@ def main():
         except ValueError:
             continue
 
-
-def get_level():
-    ...
-
-
 def generate_integer(level):
-    ...
+    number = random.randint(1, level)
 
 
 if __name__ == "__main__":
