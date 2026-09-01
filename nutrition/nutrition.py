@@ -7,16 +7,13 @@ foods = {"apple": 130,
 }
 
 def main():
-    food = input("Item: ").lower().strip()
+    food = input("Item: ").strip().lower()
     find_nutrition(food, foods)
 
-
 def find_nutrition(food, foods):
-
     if food in foods:
-        print(f"Calories: {foods[food]}")
+        print(f"Callories: {foods[food]}")
     else:
         return False
+
 main()
-
-

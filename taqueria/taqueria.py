@@ -9,19 +9,15 @@ menu = {
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
-total = 0
 
+total = 0
 while True:
-      try:
+    try:
         food = input("Item: ").title().strip()
         if food in menu:
             total += menu[food]
             print(f"Total: ${total:.2f}")
-        
-      except EOFError:
-          print("stop")
-          break
-
-
+    except EOFError:
+        break
 
 

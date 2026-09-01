@@ -13,7 +13,7 @@ def main():
             if x > y:
                 continue
 
-            percentage = round((x / y) * 100)
+            percentage = round((x/y)*100)
 
             if percentage <= 1:
                 print("E")
@@ -26,6 +26,5 @@ def main():
 
         except (ValueError, ZeroDivisionError):
             pass
-
 
 main()
