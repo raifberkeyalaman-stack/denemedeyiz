@@ -3,8 +3,8 @@ import random
 
 def main():
     level = get_level()
-    x, y = generate_integer
-    
+    x, y = generate_integer()
+    print(x, "+", y)
 
 
 
@@ -17,9 +17,9 @@ def get_level():
         except ValueError:
             continue
 
-def generate_integer(x, y):
-    x = random.randint(1, x)
-    y = random.randint(1, y)
+def generate_integer(x,y):
+    x = random.randint(1, 10)
+    y = random.randint(1, 10)
 
 
 if __name__ == "__main__":
