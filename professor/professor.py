@@ -3,6 +3,8 @@ import random
 
 def main():
     level = get_level()
+    x, y = generate_integer
+    
 
 
 
