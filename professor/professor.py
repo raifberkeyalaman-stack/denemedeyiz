@@ -4,6 +4,11 @@ import random
 def main():
     while True:
         try:
+            level = int(input("Level: "))
+            if level == 1:
+                break
+        except ValueError:
+            continue
 
 
 def get_level():
