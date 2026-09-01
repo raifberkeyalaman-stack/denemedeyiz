@@ -5,8 +5,6 @@ def main():
     
 
 
-
-
 def get_level(level):
     while True:
         try:
@@ -16,8 +14,9 @@ def get_level(level):
         except ValueError:
             continue
 
-def generate_integer(level):
-    number = random.randint(1, level)
+def generate_integer(x, y):
+    x = random.randint(1, level)
+    y = random.randint(1, level)
 
 
 if __name__ == "__main__":
