@@ -2,10 +2,11 @@ import random
 
 
 def main():
-    
+    level = get_level()
 
 
-def get_level(level):
+
+def get_level():
     while True:
         try:
             level = int(input("Level: "))
@@ -15,8 +16,8 @@ def get_level(level):
             continue
 
 def generate_integer(x, y):
-    x = random.randint(1, level)
-    y = random.randint(1, level)
+    #x = random.randint(1, level)
+    #y = random.randint(1, level)
 
 
 if __name__ == "__main__":
