@@ -16,8 +16,8 @@ def get_level():
             continue
 
 def generate_integer(x, y):
-    #x = random.randint(1, level)
-    #y = random.randint(1, level)
+    x = random.randint(1, x)
+    y = random.randint(1, y)
 
 
 if __name__ == "__main__":
