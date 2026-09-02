@@ -20,6 +20,7 @@ def get_level():
 def generate_integer(level):
     x = random.randint(1, 10)
     y = random.randint(1, 10)
+    return x, y
 
 
 if __name__ == "__main__":
