@@ -17,7 +17,7 @@ def get_level():
         except ValueError:
             continue
 
-def generate_integer(x,y):
+def generate_integer(level):
     x = random.randint(1, 10)
     y = random.randint(1, 10)
 
