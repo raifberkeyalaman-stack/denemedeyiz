@@ -3,7 +3,7 @@ import random
 
 def main():
     level = get_level()
-    x, y = generate_integer()
+    x, y = generate_integer(level)
     print(x, "+", y)
 
 
