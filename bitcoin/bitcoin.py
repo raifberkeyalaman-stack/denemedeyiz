@@ -12,14 +12,14 @@ except ValueError:
 
 
 try:
-    response = requests.get("34d0093b91c878b9af7692256d4d27d3945c88e84c063b6988b3c98aeacb3149")
+    response = requests.get("https://rest.coincap.io/v3/assets/bitcoin?apiKey=34d0093b91c878b9af7692256d4d27d3945c88e84c063b6988b3c98aeacb3149")
     response.raise_for_status()
-    convert = response.json
+    convert = response.json()
 except requests.RequestException:
     sys.exit("Request failed")
 
 price = float(convert["data"]["priceUsd"])
 value = bitcoins * price
-
+#print(convert)
 print(f"${value:,.4f}")
 
