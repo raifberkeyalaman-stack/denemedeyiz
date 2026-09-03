@@ -16,4 +16,10 @@ try:
     response.raise_for_status()
     convert = response.json
 except requests.RequestException:
-    
+    sys.exit("Request failed")
+
+price = float(convert["data"]["priceUsd"])
+value = bitcoins * price
+
+print(f"${value:,.4f}")
+
