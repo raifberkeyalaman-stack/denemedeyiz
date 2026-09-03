@@ -16,4 +16,4 @@ try:
     response.raise_for_status()
     convert = response.json
 except requests.RequestException:
-    ...
+    
