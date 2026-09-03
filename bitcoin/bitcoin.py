@@ -12,7 +12,7 @@ except ValueError:
 
 
 try:
-    response = requests.get("{"error":"auth","http_status":403,"retryable":false,"retry_after_ms":null,"message":"Forbidden: API key not found. Check that the API key is valid and enabled.","hint_tool":null}")
+    response = requests.get("34d0093b91c878b9af7692256d4d27d3945c88e84c063b6988b3c98aeacb3149")
     response.raise_for_status()
     convert = response.json
 except requests.RequestException:
