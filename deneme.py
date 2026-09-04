@@ -1,8 +1,4 @@
-names = []
-
-with open("names.txt") as file:
+with open("names.csv") as file:
     for line in file:
-        names.append(line.rstrip())
-
-for name in sorted(names):
-    print(f"Hello, {name}")
+        name, city = line.rstrip().split(",")
+        print(f"{name} is from {city}")
