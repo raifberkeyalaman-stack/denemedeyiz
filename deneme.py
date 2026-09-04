@@ -1,8 +1,8 @@
-#name = input("Kimsin sen? ")
+names = []
 
 with open("names.txt") as file:
-    lines = file.readlines()
+    for line in file:
+        names.append(line)
 
-for line in lines:
+for line in sorted(names):
     print("Hello", line.rstrip())
-
