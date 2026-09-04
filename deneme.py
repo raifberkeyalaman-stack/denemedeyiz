@@ -1,6 +1,6 @@
 #name = input("Kimsin sen? ")
 
-with open("names.txt", "r") as file:
+with open("names.txt") as file:
     lines = file.readlines()
 
 for line in lines:
