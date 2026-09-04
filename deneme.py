@@ -2,7 +2,7 @@ names = []
 
 with open("names.txt") as file:
     for line in file:
-        names.append(line)
+        names.append(line.rstrip())
 
-for line in sorted(names):
-    print("Hello", line.rstrip())
+for name in sorted(names):
+    print(f"Hello, {name}")
