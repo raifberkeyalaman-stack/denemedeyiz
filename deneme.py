@@ -1,5 +1,6 @@
 names = []
 
 for i in range(3):
-    name = input("Kimsin sen? ")
-    names.append(name)
+    names.append(input("Kimsin sen? "))
+
+print(sorted(names))
