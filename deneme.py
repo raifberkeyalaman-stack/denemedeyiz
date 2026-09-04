@@ -1,5 +1,8 @@
-name = input("Kimsin sen? ")
+#name = input("Kimsin sen? ")
 
 with open("names.txt", "r") as file:
-    file.write(f"{name}\n")
+    lines = file.readlines()
+
+for line in lines:
+    print(f"Hello {line}")
 
