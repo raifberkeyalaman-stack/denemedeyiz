@@ -1,6 +1,6 @@
-names = []
+name = input("Kimsin sen? ")
 
-for i in range(3):
-    names.append(input("Kimsin sen? "))
+file = open("names.txt", "w")
+file.write(name)
+file.close()
 
-print(sorted(names))
