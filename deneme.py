@@ -1,5 +1,5 @@
 names = []
 
-for i in range(5):
+for i in range(3):
     name = input("Kimsin sen? ")
-    print(f"Ben {name}")
+    names.append(name)
