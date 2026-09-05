@@ -1,9 +1,14 @@
-names = []
+people = []
 
 with open("names.csv") as file:
     for line in file:
         name, city = line.rstrip().split(",")
-        names.append(f"{name} is from {city}")
+        person = {"name": name, "city": city}
+        people.append(person)
 
-for name in sorted(names):
-    print(name)
+def get_name(person):
+    return person["name"]
+
+for person in sorted(people, key=get_name):
+    print(f"{person['name']} is from {person['city']}")
+
