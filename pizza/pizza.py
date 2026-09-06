@@ -1,0 +1,33 @@
+import sys
+
+def main():
+    if len(sys.argv) < 1:
+        sys.exit("Too few command-line arguments")
+    elif len(sys.argv) > 2:
+        sys.exit("Too many command-line arguments")
+
+    if not sys.argv[1].endswith(".csv"):
+        sys.exit("Not a CSV file")
+
+    try:
+        with open(sys.argv[1]) as file:
+            count = lines_of_code(file)
+    except FileNotFoundError:
+        sys.exit("File does not exist")
+
+    print(count)
+
+def lines_of_code(file):
+    count = 0
+    for line in file:
+        line = line.strip()
+
+        if line == "" or line.startswith("#"):
+            continue
+
+        count += 1
+
+    return count
+
+if __name__ == "__main__":
+    main()
