@@ -17,12 +17,12 @@ def main():
         with open(sys.argv[1]) as file:
             reader = csv.DictReader(file)
             for row in reader:
-                menu.append({"table": row[1:], "headers": row[0]})
-                print(tabulate(menu[table], menu[headers], tablefmt="grid"))
+                menu.append({"Regular Pizza": row["Regular Pizza"], "Small": row["Small"], "Large": row["Large"]})
+
+            print(tabulate(f"{row['Regular Pizza']}, {row['Small']}, {row['Large']}, tablefmt='grid'"))
 
     except FileNotFoundError:
         sys.exit("File does not exist")
-
 
 
 if __name__ == "__main__":
