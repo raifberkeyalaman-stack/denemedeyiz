@@ -12,3 +12,4 @@ def get_name(person):
 for person in sorted(people, key=get_name):
     print(f"{person['name']} is from {person['city']}")
 
+
