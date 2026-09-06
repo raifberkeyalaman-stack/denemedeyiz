@@ -17,8 +17,8 @@ def main():
         with open(sys.argv[1]) as file:
             reader = csv.DictReader(file)
             for row in reader:
-                
-            print(tabulate(table, headers, tablefmt="grid"))
+                menu.append({"table": row["table"], "small": row["home"]})
+                print(tabulate(table, headers, tablefmt="grid"))
 
     except FileNotFoundError:
         sys.exit("File does not exist")
