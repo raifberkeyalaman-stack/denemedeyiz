@@ -20,6 +20,12 @@ def main():
         sys.exit("Input and output have different extensions")
 
     if not sys.argv[2].endswith(".jpg") or sys.argv[2].endswith(".png"):
-            sys.exit("Invalid output")
+        sys.exit("Invalid output")
+
+    try:
+        
 
 
+
+if __name__ == "__main__":
+    main()
