@@ -8,7 +8,12 @@ def main():
     elif len(sys.argv) > 2:
         sys.exit("Too many command-line arguments")
 
-    if not sys.argv[1].endswith(".csv"):
-        sys.exit("Not a CSV file")
+
+    with open("before.csv") as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            print(row)
+
+
 
 main()
