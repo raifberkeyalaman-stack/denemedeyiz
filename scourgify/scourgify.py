@@ -9,11 +9,11 @@ def main():
         sys.exit("Too many command-line arguments")
 
     try:
-        with open("before.csv", newline="") as before, open("after.csv") as after:
+        with open("before.csv", newline="") as before, open("after.csv", "w", newline="") as after:
             reader = csv.DictReader(before)
             writer = csv.DictWriter(after, fieldnames=["first", "last", "house"])
             writer.writeheader()
-            
+
             for row in reader:
                 print(row)
 
