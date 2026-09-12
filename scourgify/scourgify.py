@@ -9,7 +9,7 @@ def main():
         sys.exit("Too many command-line arguments")
 
     try:
-        with open("before.csv", newline="") as before, open("after.csv", "w", newline="") as after:
+        with open(sys.argv[1], newline="") as before, open(sys.argv[2], "w", newline="") as after:
             reader = csv.DictReader(before)
             writer = csv.DictWriter(after, fieldnames=["first", "last", "house"])
             writer.writeheader()
@@ -18,7 +18,7 @@ def main():
                 last, first = row["name"].split(", ")
                 writer.writerow({
                 "first": first,
-                "last": last, 
+                "last": last,
                 "house": row["house"]
             })
 
