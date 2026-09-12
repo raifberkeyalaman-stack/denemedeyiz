@@ -11,7 +11,7 @@ def main():
     try:
         with open("before.csv", newline="") as before, open("after.csv") as after:
             reader = csv.DictReader(before)
-            writer = csv.DictWriter(after, fieldnames=["])
+            writer = csv.DictWriter(after, fieldnames=["first", "last", "house"])
             for row in reader:
                 print(row)
 
