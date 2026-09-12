@@ -21,7 +21,7 @@ def main():
         sys.exit("Invalid output")
 
     try:
-        with Image.open("sys.argv[1]") as before1:
+        with Image.open(sys.argv[1]) as before1:
             image = Image.open("before.jpg")
             shirt = Image.open("shirt.png")
 
