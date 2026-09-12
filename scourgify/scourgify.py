@@ -15,7 +15,8 @@ def main():
             writer.writeheader()
 
             for row in reader:
-                print(row)
+                last, first = row["name"].split(", ")
+                print(first, last)
 
     except FileNotFoundError:
         sys.exit("File does not exist")
