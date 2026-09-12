@@ -21,15 +21,12 @@ def main():
         sys.exit("Invalid output")
 
     try:
-        with Image.open(sys.argv[1]) as before1:
-            image = Image.open(sys.argv[1])
-            shirt = Image.open("shirt.png")
+        image = Image.open(sys.argv[1])
+        shirt = Image.open("shirt.png")
+        image = ImageOps.fit(image, shirt.size)
+        image.paste(shirt, shirt)
 
-            image = ImageOps.fit(image, shirt.size)
-
-            image.paste(sys.argv[1], shirt)
-
-            image.save(sys.argv[2])
+        image.save(sys.argv[2])
 
 
 
