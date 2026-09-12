@@ -17,7 +17,7 @@ def main():
     if extension1 != extension2:
         sys.exit("Input and output have different extensions")
 
-    if not sys.argv[2].endswith(".jpg") or sys.argv[2].endswith(".png"):
+    if extension2 not in [".jpg", ".png", ".jpeg"]:
         sys.exit("Invalid output")
 
     try:
