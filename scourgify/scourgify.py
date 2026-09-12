@@ -19,7 +19,7 @@ def main():
                 writer.writerow({
                 "first": first,
                 "last": last,
-                "house": before["house"]
+                
             })
 
     except FileNotFoundError:
