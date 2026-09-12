@@ -3,13 +3,13 @@ import csv
 
 
 def main():
-    if len(sys.argv) < 1:
+    if len(sys.argv) < 2:
         sys.exit("Too few command-line arguments")
-    elif len(sys.argv) > 2:
+    elif len(sys.argv) > 3:
         sys.exit("Too many command-line arguments")
 
     try:
-        with open("before.csv", newline="") as before, :
+        with open("before.csv", newline="") as before, open("after.csv") as after:
             reader = csv.DictReader(before)
             for row in reader:
                 print(row)
