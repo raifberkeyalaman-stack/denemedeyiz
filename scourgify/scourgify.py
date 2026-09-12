@@ -8,12 +8,14 @@ def main():
     elif len(sys.argv) > 2:
         sys.exit("Too many command-line arguments")
 
+    try:
+        with open("before.csv", newline="") as file:
+            reader = csv.DictReader(file)
+            for row in reader:
+                print(row)
 
-    with open("before.csv", newline="") as file:
-        reader = csv.DictReader(file)
-        for row in reader:
-            print(row)
-
+    except FileNotFoundError:
+        sys.exit("File does not exist")
 
 
 main()
