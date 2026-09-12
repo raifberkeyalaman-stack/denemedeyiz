@@ -22,7 +22,7 @@ def main():
 
     try:
         with Image.open("sys.argv[1]") as before1:
-            ImageOps.fit()
+            ImageOps.fit(image: before1, )
 
 
 
