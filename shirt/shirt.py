@@ -23,13 +23,13 @@ def main():
         sys.exit("Invalid output")
 
     try:
-        with Image.open("before1.jpg") as before1:
-
+        with Image.open("sys.argv[1]") as before1:
+            print(before1.size)
 
 
 
     except FileNotFoundError:
-        sys.exit("File does not exist")
+        sys.exit("Input does not exist")
 
 
 if __name__ == "__main__":
