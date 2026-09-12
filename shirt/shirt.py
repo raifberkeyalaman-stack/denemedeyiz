@@ -19,6 +19,7 @@ def main():
     if extension1 != extension2:
         sys.exit("Input and output have different extensions")
 
-    if 
+    if not sys.argv[1:2].endswith(".jpg") or sys.argv[1:2].endswith(".png"):
+            sys.exit("Not a CSV file")
 
 
