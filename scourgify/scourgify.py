@@ -9,7 +9,7 @@ def main():
         sys.exit("Too many command-line arguments")
 
 
-    with open("before.csv") as file:
+    with open("before.csv", newline="") as file:
         reader = csv.DictReader(file)
         for row in reader:
             print(row)
