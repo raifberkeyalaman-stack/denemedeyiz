@@ -29,7 +29,7 @@ def main():
 
             image.paste(sys.argv[1], shirt)
 
-            image.save("after.jpg")
+            image.save(sys.argv[1])
 
 
 
