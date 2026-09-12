@@ -9,8 +9,8 @@ def main():
         sys.exit("Too many command-line arguments")
 
     try:
-        with open("before.csv", newline="") as file:
-            reader = csv.DictReader(file)
+        with open("before.csv", newline="") as before, :
+            reader = csv.DictReader(before)
             for row in reader:
                 print(row)
 
