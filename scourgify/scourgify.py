@@ -3,7 +3,7 @@ import csv
 
 
 def main():
-    if len(sys.argv) < 2:
+    if len(sys.argv) < 3:
         sys.exit("Too few command-line arguments")
     elif len(sys.argv) > 3:
         sys.exit("Too many command-line arguments")
@@ -18,12 +18,11 @@ def main():
                 last, first = row["name"].split(", ")
                 writer.writerow({
                 "first": first,
-                "last": last,
-                
+                "last": last, 
+                "house": row["house"]
             })
 
     except FileNotFoundError:
         sys.exit("File does not exist")
-
 
 main()
