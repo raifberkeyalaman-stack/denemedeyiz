@@ -1,8 +1,6 @@
 import sys
-import csv
 import os
 from PIL import Image
-
 
 def main():
     if len(sys.argv) < 3:
