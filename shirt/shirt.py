@@ -1,7 +1,7 @@
 import sys
 import csv
 import os
-
+from PIL import Image
 
 
 def main():
@@ -19,7 +19,7 @@ def main():
     if extension1 != extension2:
         sys.exit("Input and output have different extensions")
 
-    if not sys.argv[1:2].endswith(".jpg") or sys.argv[1:2].endswith(".png"):
-            sys.exit("Not a CSV file")
+    if not sys.argv[2].endswith(".jpg") or sys.argv[2].endswith(".png"):
+            sys.exit("Invalid output")
 
 
