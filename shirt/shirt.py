@@ -23,8 +23,13 @@ def main():
         sys.exit("Invalid output")
 
     try:
-        
+        with Image.open("before1.jpg") as before1:
 
+
+
+
+    except FileNotFoundError:
+        sys.exit("File does not exist")
 
 
 if __name__ == "__main__":
