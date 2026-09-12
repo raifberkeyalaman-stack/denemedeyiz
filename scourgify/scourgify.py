@@ -25,4 +25,5 @@ def main():
     except FileNotFoundError:
         sys.exit("File does not exist")
 
-main()
+if __name__ == "__main__":
+    main()
