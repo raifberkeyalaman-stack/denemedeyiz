@@ -22,7 +22,7 @@ def main():
 
     try:
         with Image.open(sys.argv[1]) as before1:
-            image = Image.open("before.jpg")
+            image = Image.open(sys.argv[1])
             shirt = Image.open("shirt.png")
 
             image = ImageOps.fit(image, shirt.size)
