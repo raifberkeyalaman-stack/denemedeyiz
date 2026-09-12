@@ -1,6 +1,6 @@
 import sys
 import os
-from PIL import Image
+from PIL import Image, ImageOps
 
 def main():
     if len(sys.argv) < 3:
@@ -22,7 +22,14 @@ def main():
 
     try:
         with Image.open("sys.argv[1]") as before1:
-            ImageOps.fit(image: before1, )
+            image = Image.open("before.jpg")
+            shirt = Image.open("shirt.png")
+
+            image = ImageOps.fit(image, shirt.size)
+
+            image.paste(sys.argv[1], shirt)
+
+            image.save("after.jpg")
 
 
 
