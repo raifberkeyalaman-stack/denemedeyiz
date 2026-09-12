@@ -16,7 +16,11 @@ def main():
 
             for row in reader:
                 last, first = row["name"].split(", ")
-                print(first, last)
+                writer.writerow({
+                "first": first,
+                "last": last,
+                "house": before["house"]
+            })
 
     except FileNotFoundError:
         sys.exit("File does not exist")
