@@ -6,7 +6,10 @@ import inflect
 def main():
     birth_date = input("Date of birth: ")
     try:
-        year, month, day = input
+        year, month, day = map(int, birth_date.split("-"))
+        birth = date.
+    except ValueError:
+        sys.exit("Invalid date")
 
 
 ...
