@@ -4,7 +4,9 @@ import inflect
 
 
 def main():
-    ...
+    birth_date = input("Date of birth: ")
+    try:
+        year, month, day = input
 
 
 ...
