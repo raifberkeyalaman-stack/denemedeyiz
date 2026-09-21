@@ -12,7 +12,14 @@ def main():
         sys.exit("Invalid date")
 
 
-...
+    today = date.today()
+    days = (today - birth).days
+    minutes = days * 24 * 60
+
+    p = inflect.engine()
+    words = p.number_to_words(minutes, andword="")
+
+    print(words.capitalize(), "minutes")
 
 
 if __name__ == "__main__":
